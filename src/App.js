@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import Header from './components/Header';
 import './App.css';
+import Trendingsec from "./components/Tredingsec"
+
+const nav = [
+  { id: 1, name: "Our story" },
+  { id: 2, name: "Membership" },
+  { id: 3, name: "Write" },
+  { id: 4, name: "Sign in" },
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section >
+      <div className="Big">
+        <div className="container">
+          <Header navs={nav} />
+        </div>
+
+      </div>
+      <div className="container">
+        <Trendingsec />
+
+      </div>
+    </section>
   );
 }
 
