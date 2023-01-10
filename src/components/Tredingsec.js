@@ -1,3 +1,4 @@
+import Card from "./Card"
 import Data from "./Data"
 export default function Tredingsec() {
     return (
@@ -7,7 +8,7 @@ export default function Tredingsec() {
                 <p>TRENDING ON MEDIUM</p>
             </div>
             <div className="row-2">
-
+            <Card />
             </div>
         </section>
     )

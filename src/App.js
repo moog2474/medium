@@ -1,5 +1,7 @@
 import Header from './components/Header';
 import './App.css';
+import Data from './components/Data';
+import Card from './components/Card';
 import Trendingsec from "./components/Tredingsec"
 
 const nav = [
