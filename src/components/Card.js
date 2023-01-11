@@ -1,5 +1,5 @@
 
-export default function CardList ({newsList}) {
+export default function CardListnp ({newsList}) {
     return(
         <div>
         {newsList.map((e) => {
