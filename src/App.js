@@ -119,9 +119,9 @@ function App() {
     <section>
       <Header navs={nav} />
       <Trendingsec datas={news} />
-      <div>
+      <div className=' container lol'>
         <News data={news} />
-        <div>
+        <div className='pine'>
           <Cat cats={cat} />
           <Cot cots={cot} />
         </div>

@@ -2,9 +2,9 @@ import "../style/Tredingsec.css"
 export default function Trendingsec({ datas }) {
     return (
         <section className="container br">
-            <div className="row-2 col">
+            <div className="col">
                 <img src={require("../images/log.png")} alt="" />
-                <p>TRENDING ON MEDIUM</p>
+                <p className="bold">TRENDING ON MEDIUM</p>
             </div>
             <div className="row-2 col-wrap">
 

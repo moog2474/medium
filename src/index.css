@@ -62,7 +62,8 @@ header p {
   font-size: 24px;
   width: 430px;
 }
-header .col{
+
+header .col {
   justify-content: space-between;
 }
 
@@ -87,4 +88,41 @@ nav img {
   background-color: #191919;
   color: white;
   font-size: 20px;
+}
+
+.lol {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pop {
+  width: 60%;
+}
+
+.pine {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+}
+
+.cat {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+}
+
+.cat span {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.cot {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }

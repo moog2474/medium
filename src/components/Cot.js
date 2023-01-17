@@ -1,11 +1,11 @@
-export default function Cot({cots}){
-    return(
-        <div>
-        {cots.map((b)=>{
-            return(
-                <a>{b.name}</a>
-            )
-        })}
+export default function Cot({ cots }) {
+    return (
+        <div className="cot">
+            {cots.map((b) => {
+                return (
+                    <a>{b.name}</a>
+                )
+            })}
 
         </div>
     )

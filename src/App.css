@@ -32,7 +32,28 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.br .col {
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.bold {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.br {
+  margin-top: 50px;
+
+}
+
+header,
+.borderbottom {
+  border-bottom: 1px solid black;
 }
