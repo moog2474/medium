@@ -1,16 +1,8 @@
 import React from "react"
 import Sec from "./Sec"
-import LoginModal from "./LoginModal"
 
-export default function Navigation({
 
-    onLogin,
-    user,
-    setUser,
-    showModal,
-    openModal
-
-}) {
+export default function Navigation() {
     const nav = [
         { id: 1, link: "about", name: "Our story" },
         { id: 2, link: "membership", name: "Membership" },
@@ -24,29 +16,15 @@ export default function Navigation({
                     <nav className="col">
                         <img src={require("../images/Vector.png")} alt="" />
                         <ul className="col">
-                            {nav.map((e, index) => {
-                                <>
-                                    <li key={index}>
-                                        {e.id == 4 ? (
-                                            user ? (
-                                                user
-                                            ) : (
-                                                <span onClick={openModal}>
-                                                    {e.name}
-                                                </span>
-                                            )
-                                        ) : (
-                                            <a href={e.link}>
-                                                {e.name}
-                                            </a>
-                                        )}
+                            {nav.map((e) => {
+                                return (
+                                    <li>
+                                        {e.name}
                                     </li>
-                                </>
+
+                                )
                             })}
                             <button>Get started</button>
-                            {user && (
-                                <button className="warning" onClick={() => setUser("")}>Sign Out</button>
-                            )}
                         </ul>
                     </nav>
 
@@ -54,11 +32,6 @@ export default function Navigation({
 
             </div>
             <Sec />
-            <LoginModal
-                showModal={showModal}
-                onLogin={onLogin}
-                setShowModal={openModal}
-            />
         </header>
     )
 }
