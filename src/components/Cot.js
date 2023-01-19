@@ -1,9 +1,21 @@
-export default function Cot({ cots }) {
+import React from "react"
+const cot = [
+    "Help",
+    "Status",
+    "Writers",
+    "Blog",
+    "Careers",
+    "Privacy",
+    "Terms",
+    "About",
+    "Text to speech",
+  ]
+export default function Cot() {
     return (
         <div className="cot">
-            {cots.map((b) => {
+            {cot.map((b) => {
                 return (
-                    <a>{b.name}</a>
+                    <a>{b}</a>
                 )
             })}
 

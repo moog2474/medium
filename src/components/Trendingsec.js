@@ -1,5 +1,9 @@
+import React, {useState} from "react"
 import "../style/Tredingsec.css"
-export default function Trendingsec({ datas }) {
+import news from "./Data"
+export default function Trendingsec() {
+
+    const [ data, setData] = useState(news)
     return (
         <section className="container br">
             <div className="col">
@@ -8,7 +12,7 @@ export default function Trendingsec({ datas }) {
             </div>
             <div className="row-2 col-wrap">
 
-                {datas.map((e, index) => {
+                {data.map((e, index) => {
                     if (e.isTrending) {
                         return (
                             <div className="flex">
